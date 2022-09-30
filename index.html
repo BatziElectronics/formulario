@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="estilo.css">
   </head>
   <body>
-
-    <div class="login-box">
-      <h1>Solicitar Información</h1>
-      <form action= "https://formsubmit.co/olcotaxel017@gmail.com" method="POST">
-        <!-- USERNAME INPUT -->
-        <label for="Nombre">Ingrese su nombre</label>
-        <input type="text" placeholder="Nombre" required>
-<label for="Apellido" >Ingrese su apellido</label>
-<input type="text" placeholder="Apellido" required>
-        <!-- PASSWORD INPUT -->
-<label for="Correo">Ingrese su correo</label>
-<input type="text" placeholder="Correo" required>
-<label for="Telefono" >Ingrese su teléfono</label>
-<input type="text" placeholder="Telefono" required>
-<input type="submit" value="Enviar">
-</form>
+<div class="container">
+  <h1>Informacion</h1>
+  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Ingrese su Nombre" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Ingrese su Correo" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="Escriba el Mensaje" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+  </form>
 </div>
-</body>
-</html>
+    
